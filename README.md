@@ -6,7 +6,7 @@
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Solana](https://img.shields.io/badge/platform-solana-3a3a3a)
 
-## 🔍 Overview
+## Overview
 
 **Solana ShadowLens** is a Rust-based web dashboard designed to bring transparency to the Solana blockchain by enabling users to inspect and analyze closed-source smart contracts. It decodes base64-encoded BPF bytecode from on-chain programs and displays it in a human-readable hexadecimal format.
 
@@ -14,7 +14,7 @@ This tool is aimed at developers, auditors, and researchers who want to reverse-
 
 ---
 
-## 🚀 Features
+## Features
 
 - Input any Solana Program ID
 - Fetch on-chain program binary via RPC
@@ -25,22 +25,22 @@ This tool is aimed at developers, auditors, and researchers who want to reverse-
 
 ---
 
-## 🛠️ Setup Instructions
+## Setup Instructions
 
-### 🔧 Prerequisites
+### Prerequisites
 
 - Rust (install via https://rustup.rs)
 - Cargo (comes with Rust)
 - Git
 
-### 📦 Clone the Repository
+### Clone the Repository
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/solana-shadowlens-rust.git
 cd solana-shadowlens-rust
 ```
 
-### 🏗️ Build and Run Locally
+### Build and Run Locally
 
 ```bash
 cargo run
@@ -48,7 +48,7 @@ cargo run
 
 This will start a Rocket server at `http://localhost:8000`.
 
-### 🌐 Using the Dashboard
+### Using the Dashboard
 
 1. Visit `http://localhost:8000`
 2. Enter any valid Solana Program ID (e.g. `Vote111111111111111111111111111111111111111`)
@@ -56,7 +56,7 @@ This will start a Rocket server at `http://localhost:8000`.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 solana_shadowlens/
@@ -74,9 +74,9 @@ solana_shadowlens/
 
 ---
 
-## 🌍 Deployment Guide
+## Deployment Guide
 
-### 📦 Deploying to a VPS (e.g. DigitalOcean, Linode, AWS)
+### Deploying to a VPS (e.g. DigitalOcean, Linode, AWS)
 
 1. SSH into your server:
 ```bash
@@ -91,7 +91,7 @@ sudo apt update && sudo apt install -y build-essential git pkg-config libssl-dev
 
 3. Clone, build, and install:
 ```bash
-git clone https://github.com/YOUR_USERNAME/solana-shadowlens-rust.git
+git clone https://github.com/Khaythefirst/solana-shadowlens-rust.git
 cd solana-shadowlens-rust
 cargo build --release
 ```
@@ -105,10 +105,11 @@ systemctl start shadowlens
 ```
 
 5. (Optional) Configure Nginx for domain routing.
-
+```bash
+sudo apt install nginx
 ---
 
-### 🐳 Deploying with Docker
+_### Deploying with Docker_
 
 1. Build the image:
 ```bash
@@ -122,7 +123,7 @@ docker run -p 8000:8000 shadowlens
 
 ---
 
-## ⚙️ Future Enhancements
+## Future Enhancements
 
 - Add instruction discriminator extractor
 - Heuristics-based IDL generator
@@ -132,19 +133,19 @@ docker run -p 8000:8000 shadowlens
 
 ---
 
-## 🧑‍💻 Contributing
+## Contributing
 
-We welcome contributions to extend the capabilities of this tool. Please submit pull requests or open issues on GitHub.
+I gladly welcome contributions to extend the capabilities of this tool. Please submit pull requests or open issues on GitHub.
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
-## 🌐 References
+## References
 
 - [Solana Docs](https://docs.solana.com/)
 - [Rocket Framework](https://rocket.rs/)
