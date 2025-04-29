@@ -25,7 +25,7 @@ This tool is aimed at developers, auditors, and researchers who want to reverse-
 
 ---
 
-## 🛠Setup Instructions
+## Setup Instructions
 
 ### Prerequisites
 
