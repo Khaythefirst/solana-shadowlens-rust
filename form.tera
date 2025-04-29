@@ -1,0 +1,6 @@
+
+<form action="/analyze" method="post">
+    <label>Enter Program ID:</label>
+    <input type="text" name="program_id" />
+    <button type="submit">Analyze</button>
+</form>

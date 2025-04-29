@@ -1,0 +1,16 @@
+
+[package]
+name = "solana_shadowlens"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rocket = { version = "0.5.0-rc.2", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+reqwest = { version = "0.11", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
+tera = "1.17.1"
+rocket_dyn_templates = "0.1.0-rc.2"
+base64 = "0.21.0"
+hex = "0.4"
