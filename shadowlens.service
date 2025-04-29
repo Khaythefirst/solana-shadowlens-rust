@@ -1,0 +1,13 @@
+
+[Unit]
+Description=Solana ShadowLens Dashboard
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/root/solana-shadowlens-rust
+ExecStart=/root/solana-shadowlens-rust/target/release/solana_shadowlens
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
