@@ -107,9 +107,10 @@ systemctl start shadowlens
 5. (Optional) Configure Nginx for domain routing.
 ```bash
 sudo apt install nginx
+```
 ---
 
-_### Deploying with Docker_
+### Deploying with Docker
 
 1. Build the image:
 ```bash
